@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom"
 
 const NavScrollExample = () => {
   return (
@@ -16,7 +17,7 @@ const NavScrollExample = () => {
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: "100px" }}
             navbarScroll>
-            <Nav.Link style= {{fontSize: "20px"}} href="#action1">Home</Nav.Link>
+            <Nav.Link style= {{fontSize: "20px"}} as={Link} to="/">Home</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
